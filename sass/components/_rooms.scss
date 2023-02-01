@@ -1,0 +1,239 @@
+.rooms {
+    background: #FCF8F3;
+}
+
+.rooms__container {
+    @media screen and (min-width: 992px) {
+        display: flex;
+    }
+}
+
+.rooms__body {
+    position: relative;
+    z-index: 5;
+    flex: 0 0 37.5%;
+    align-self: center;
+
+    @media screen and (max-width: 991.98px) {
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 992px) {
+        padding-right: 86px;
+    }
+}
+
+.rooms__title {
+    text-align: left;
+
+    &:not(:last-child) {
+        margin-bottom: 8px;
+    }
+}
+
+.rooms__text {
+    font-weight: 500;
+
+    &:not(:last-child) {
+        margin-bottom: 24px;
+    }
+}
+
+.rooms__button {
+    font-size: 16px;
+    min-height: 48px;
+    max-width: 176px;
+    padding: 15px;
+}
+
+.rooms__slider {
+    flex: 1 1 auto;
+    min-width: 0;
+    align-self: flex-start;
+
+    @media screen and (max-width: 480px) {
+        margin: 0px -15px;
+    }
+}
+
+.slider-rooms {
+    position: relative;
+}
+
+.slider-rooms__body {
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100vw;
+        background-color: #FCF8F3;
+        z-index: 2;
+        transform: translate(-100%, 0px);
+    }
+}
+
+.slider-rooms__slide {
+    position: relative;
+    max-width: 404px !important;
+    min-height: 582px;
+
+    &.swiper-slide-active {
+        .slider-rooms__image {
+            max-width: 404px;
+            min-height: 582px;
+        }
+
+        .slider-rooms__content {
+            display: block;
+            left: 14px;
+            bottom: 14px;
+        }
+    }
+
+    @media screen and (max-width: 768.92px) {
+        height: 400px;
+    }
+
+    @media screen and (max-width: 480px) {
+        width: 100%;
+    }
+}
+
+.slider-rooms__image {
+    width: 372px;
+    height: 486px;
+}
+
+.slider-rooms__content {
+    display: none;
+    position: absolute;
+    left: 14px;
+    bottom: 14px;
+    padding: 15px;
+    color: inherit;
+    max-width: 240px;
+    background-color: rgb(255, 255, 255, 0.72);
+
+    @media screen and (min-width: 769px) {
+        left: 24px;
+        bottom: 24px;
+        padding: 32px;
+
+        @supports ((-webkit-backdrop-filter: blur(31px)) or (backdrop-filter: blur(31px))) {
+            background: rgba(255, 255, 255, 0.72);
+            backdrop-filter: blur(31px);
+        }
+    }
+}
+
+.label-slider {
+    display: grid;
+    grid-template-columns: auto 27px auto;
+    align-items: center;
+    justify-content: start;
+    color: $text-color;
+    gap: 8px;
+
+    &:not(:last-child) {
+        margin: 0 0 8px 0;
+    }
+}
+
+.slider-rooms__number {
+    font-weight: 500;
+}
+
+.slider-rooms__line {
+    height: 1px;
+    background-color: $text-color;
+}
+
+.slider-rooms__text {
+    font-weight: 500;
+}
+
+.slider-rooms__title {
+    font-size: 28px;
+}
+
+.slider-rooms__svg {
+    position: absolute;
+    bottom: 0;
+    right: -48px;
+    width: 48px;
+    height: 48px;
+    background-color: #E89F71;
+}
+
+.slider-rooms__svg_arrow {
+    display: block;
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 25%;
+}
+
+.slider-rooms__arrows {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    justify-content: space-between;
+    width: 95%;
+    left: 24px;
+    pointer-events: none;
+    transform: translate(0px, -50%);
+
+    @media screen and (min-width: 1300px) {
+        width: 106%;
+        left: -24px;
+    }
+
+    @media screen and (max-width: 480px) {
+        width: calc(100% - 30px);
+        left: 15px;
+    }
+
+}
+
+.slider-arrows {
+    pointer-events: auto;
+}
+
+.slider-rooms__arrow {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16);
+}
+
+.slider-arrow__white {
+    fill: #E89F71;
+    background: #fff;
+
+    &:hover {
+        fill: #E89F71;
+        background: rgba(232, 159, 113, 0.3);
+    }
+}
+
+.slider-rooms__dotts.swiper-pagination-bullets {
+    @media screen and (min-width: 769px) {
+        position: absolute;
+        z-index: 5;
+        bottom: 40px;
+        left: 428px;
+        width: 100px;
+    }
+
+    @media screen and (max-width: 768.98px) {
+        justify-content: center;
+        padding-top: 20px;
+    }
+}

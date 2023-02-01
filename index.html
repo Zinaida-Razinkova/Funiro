@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funiro</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@0.7.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__container container">
+                <div class="header__body">
+                    <nav class="header__nav nav">
+                        <a href="./index.html"><img class="nav__logo" src="./images/Logo.svg" alt="Logo"></a>
+                        <ul data-spollers class="nav__list" data-menu id="header-container">
+                            <li class="nav__item">
+                                <a class="nav__link" href="">Products</a>
+                                <button data-spoller type="button" class="nav__btn">
+                                    <svg class="arrow">
+                                        <use href="./images/sprite.svg#arrow"></use>
+                                    </svg>
+                                </button>
+                                <ul class="nav__sub-list">
+                                    <li class="nav__sub-item"><a href="" class="nav__sub-link">Product#1</a></li>
+                                    <li class="nav__sub-item"><a href="" class="nav__sub-link">Product#2</a></li>
+                                    <li class="nav__sub-item"><a href="" class="nav__sub-link">Product#3</a></li>
+                                    <li class="nav__sub-item"><a href="" class="nav__sub-link">Product#4</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="">Rooms</a>
+                                <button data-spoller type="button" class="nav__btn">
+                                    <svg class="arrow">
+                                        <use href="./images/sprite.svg#arrow"></use>
+                                    </svg>
+                                </button>
+                                <ul class="nav__sub-list">
+                                    <li class="nav__sub-item"><a href="" class="nav__sub-link">Room#1</a></li>
+                                    <li class="nav__sub-item"><a href="" class="nav__sub-link">Room#2</a></li>
+                                    <li class="nav__sub-item"><a href="" class="nav__sub-link">Room#3</a></li>
+                                    <li class="nav__sub-item"><a href="" class="nav__sub-link">Room#4</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav__item"><a class="nav__link" href="">Inspirations</a></li>
+                        </ul>
+                    </nav>
+                        <div class="header__search">
+                            <div class="search-form">
+                                <button type="button" class="search-form__btn_mob">
+                                    <svg class="search-form__icon_mob">
+                                        <use href="./images/sprite.svg#search"></use>
+                                    </svg>
+                                </button>
+                                <form action="#" class="search-form__item">
+                                    <button type="button" class="search-form__btn">
+                                        <svg class="search-form__icon">
+                                            <use href="./images/sprite.svg#search"></use>
+                                        </svg>
+                                    </button>
+                                    <input autocomplete="off" type="text" name="form[]" placeholder="Search for minimalist chair"
+                                        class="search-form__input">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="header__actions actions-header">
+                        
+                            <a href="" class="actions-header__item actions-header__item_favorites ">
+                                <svg class="actions-header__icon">
+                                    <use href="./images/sprite.svg#heart"></use>
+                                </svg>
+                            </a>
+                            <div class="actions-header__item cart-header ">
+                                <a href="" class="cart-header__item ">
+                                    <svg class="cart-header__icon">
+                                        <use href="./images/sprite.svg#cart"></use>
+                                    </svg>
+                                </a>
+                                <div class="cart-header__body">
+                                    <ul class="cart-header__list cart-list"></ul>
+                                </div>
+                            </div>
+                            <a href="" class="actions-header__item actions-header__item_user">
+                                <img class="actions-header__item_img" src="./images/icons/header/user.jpg" alt="Avatar">
+                            </a>
+                        </div>
+                        <button class="header__menu" aria-expanded="false" type="button" data-menu-button>
+                            <svg class="header__menu-svg" aria-label="Mobile menu">
+                                <use class="header__menu-close" href="./images/sprite.svg#burgerclose"></use>
+                                <use class="header__menu-open" href="./images/sprite.svg#burgermenu"></use>
+                            </svg>
+                        </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="slider">
+            <div class="slider__container container">
+                <div class="slider__body">
+                    <div class="slider__content content-main">
+                        <h1 class="content-main__title title title__big mb_16">High-Quality
+                            Furniture Just
+                            For You</h1>
+                        <p class="content-main__text">Our furniture is made from selected and best quality materials
+                            that are suitable for your dream home</p>
+                        <a href="" class="content-main__button button">Shop Now</a>
+
+                    </div>
+                    <div class="slider__slider slider-main">
+                        <div class="slider-main__controls controls-slider">
+                            <div class="controls-slider__dotts"></div>
+                            <div class="controls-slider__arrows slider-arrows">
+                                <button type="button" class="slider-arrow slider-arrow__prew">
+                                    <svg class="arrow__prew">
+                                        <use href="./images/sprite.svg#arrow"></use>
+                                    </svg>
+                                </button>
+                                <button type="button" class="slider-arrow slider-arrow__next">
+                                    <svg class="arrow__next">
+                                        <use href="./images/sprite.svg#arrow"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Slider main container -->
+                        <div class="slider-main__body swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="slider-main__slide swiper-slide">
+                                    <div class="swiper-slide__img">
+                                        <img src="./images/main-slider/01.jpg" alt="Slide1">
+                                    </div>
+                                    <a href="" class="swiper-slide__link">
+                                        <p class="swiper-slide__title title">Bohauss</p>
+                                        <p class="swiper-slide__text text">Luxury big sofa 2-seat</p>
+                                        <p class="swiper-slide__price">Rp 12.000.000
+                                            <svg class="swiper-slide__svg">
+                                                <use href="./images/sprite.svg#arrowright"></use>
+                                            </svg>
+                                        </p>
+
+                                    </a>
+                                </div>
+                                <div class="slider-main__slide swiper-slide">
+                                    <div class="swiper-slide__img">
+                                        <img src="./images/main-slider/03.jpg" alt="Slide2">
+                                    </div>
+                                    <a href="" class="swiper-slide__link">
+                                        <p class="swiper-slide__title title">Skillebekk</p>
+                                        <p class="swiper-slide__text text">Luxury big sofa 2-seat</p>
+                                        <p class="swiper-slide__price">Rp 17.000.000
+                                            <svg class="swiper-slide__svg">
+                                                <use href="./images/sprite.svg#arrowright"></use>
+                                            </svg>
+                                        </p>
+
+                                    </a>
+                                </div>
+                                <div class="slider-main__slide swiper-slide">
+                                    <div class="swiper-slide__img">
+                                        <img src="./images/main-slider/02.jpg" alt="Slide3">
+                                    </div>
+                                    <a href="" class="swiper-slide__link">
+                                        <p class="swiper-slide__title title">Norodden</p>
+                                        <p class="swiper-slide__text text">Luxury big sofa 2-seat</p>
+                                        <p class="swiper-slide__price">Rp 15.000.000
+                                            <svg class="swiper-slide__svg">
+                                                <use href="./images/sprite.svg#arrowright"></use>
+                                            </svg>
+                                        </p>
+
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <a href="" class="slider__body-button button">Shop Now</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="advantages pd_44">
+            <div class="advantages__container container">
+                <ul class="advantages__items">
+                    <li class="advantages__item">
+                        <img class="advantages__img" src="./images/advantages/01.svg" alt="Icons">
+                        <h3 class="advantages__title text">High Quality</h3>
+                        <p class="advantages__text text">crafted from top materials</p>
+                    </li>
+                    <li class="advantages__item">
+                        <img class="advantages__img" src="./images/advantages/02.svg" alt="Icons">
+                        <h3 class="advantages__title text">Warrany Protection</h3>
+                        <p class="advantages__text text">Over 2 years</p>
+                    </li>
+                    <li class="advantages__item">
+                        <img class="advantages__img" src="./images/advantages/03.svg" alt="Icons">
+                        <h3 class="advantages__title text">Free Shipping</h3>
+                        <p class="advantages__text text">Order over 150 $</p>
+                    </li>
+                    <li class="advantages__item">
+                        <img class="advantages__img" src="./images/advantages/04.svg" alt="Icons">
+                        <h3 class="advantages__title text">24 / 7 Support</h3>
+                        <p class="advantages__text text">Dedicated support</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="products pd_44">
+            <div class="products__container container">
+                <h2 class="products__title title">Our Products</h2>
+                <div class="products__items">
+                    <article data-pid="1" class="products__item item-product">
+                        <div class="item-product__labels">
+                            <div class="item-product__label item-product__label_sale">-30%</div>
+                        </div>
+                        <a href="" class="item-product__image">
+                            <img src="./images/products/01.jpg" alt="Product#1">
+                        </a>
+                        <div class="item-product__body">
+                            <div class="item-product__content">
+                                <h3 class="item-product__title">Syltherine</h3>
+                                <p class="item-product__text text">Stylish cafe chair</p>
+                            </div>
+                            <div class="item-product__prices">
+                                <p class="item-product__price ">Rp 2.500.000</p>
+                                <p class="item-product__price item-product__price_old">Rp 3.500.000</p>
+                            </div>
+                            <div class="item-product__actions actions-product">
+                                <div class="actions-product__body">
+                                    <a href="" class="actions-product__button button button button__white">Add to
+                                        cart</a>
+                                    <a href="" class="actions-product__link">
+                                        <svg class="actions-product__link_share">
+                                            <use href="./images/sprite.svg#share"></use>
+                                        </svg>
+                                        Share
+                                    </a>
+                                    <a href="" class="actions-product__link">
+                                        <svg class="actions-product__link_like">
+                                            <use href="./images/sprite.svg#heart"></use>
+                                        </svg>
+                                        Like
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </article>
+                    <article data-pid="2" class="products__item item-product">
+                        <div class="item-product__labels">
+                            <div class="item-product__label item-product__label_sale">-30%</div>
+                        </div>
+                        <a href="" class="item-product__image">
+                            <img src="./images/products/03.jpg" alt="Product#3">
+                        </a>
+                        <div class="item-product__body">
+                            <div class="item-product__content">
+                                <h3 class="item-product__title">Leviosa</h3>
+                                <p class="item-product__text text">Stylish cafe chair</p>
+                            </div>
+                            <div class="item-product__prices">
+                                <p class="item-product__price ">Rp 2.500.000</p>
+                            </div>
+                            <div class="item-product__actions actions-product">
+                                <div class="actions-product__body">
+                                    <a href="" class="actions-product__button button button button__white">Add to
+                                        cart</a>
+                                    <a href="" class="actions-product__link">
+                                        <svg class="actions-product__link_share">
+                                            <use href="./images/sprite.svg#share"></use>
+                                        </svg>
+                                        Share
+                                    </a>
+                                    <a href="" class="actions-product__link">
+                                        <svg class="actions-product__link_like">
+                                            <use href="./images/sprite.svg#heart"></use>
+                                        </svg>
+                                        Like
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </article>
+                    <article data-pid="3" class="products__item item-product">
+                        <div class="item-product__labels">
+                            <div class="item-product__label item-product__label_sale">-50%</div>
+                        </div>
+                        <a href="" class="item-product__image">
+                            <img src="./images/products/01.jpg" alt="Product#1">
+                        </a>
+                        <div class="item-product__body">
+                            <div class="item-product__content">
+                                <h3 class="item-product__title">Lolito</h3>
+                                <p class="item-product__text text">Luxury big sofa</p>
+                            </div>
+                            <div class="item-product__prices">
+                                <p class="item-product__price ">Rp 7.000.000</p>
+                                <p class="item-product__price item-product__price_old">Rp 14.000.000</p>
+                            </div>
+                            <div class="item-product__actions actions-product">
+                                <div class="actions-product__body">
+                                    <a href="" class="actions-product__button button button button__white">Add to
+                                        cart</a>
+                                    <a href="" class="actions-product__link">
+                                        <svg class="actions-product__link_share">
+                                            <use href="./images/sprite.svg#share"></use>
+                                        </svg>
+                                        Share
+                                    </a>
+                                    <a href="" class="actions-product__link">
+                                        <svg class="actions-product__link_like">
+                                            <use href="./images/sprite.svg#heart"></use>
+                                        </svg>
+                                        Like
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </article>
+                    <article data-pid="4" class="products__item item-product">
+                        <div class="item-product__labels">
+                            <div class="item-product__label item-product__label_new">New</div>
+                        </div>
+                        <a href="" class="item-product__image">
+                            <img src="./images/products/04.jpg" alt="Product#4">
+                        </a>
+                        <div class="item-product__body">
+                            <div class="item-product__content">
+                                <h3 class="item-product__title">Respira</h3>
+                                <p class="item-product__text text">Minimalist fan</p>
+                            </div>
+                            <div class="item-product__prices">
+                                <p class="item-product__price ">Rp 500.000</p>
+                            </div>
+                            <div class="item-product__actions actions-product">
+                                <div class="actions-product__body">
+                                    <a href="" class="actions-product__button button button button__white">Add to
+                                        cart</a>
+                                    <a href="" class="actions-product__link">
+                                        <svg class="actions-product__link_share">
+                                            <use href="./images/sprite.svg#share"></use>
+                                        </svg>
+                                        Share
+                                    </a>
+                                    <a href="" class="actions-product__link">
+                                        <svg class="actions-product__link_like">
+                                            <use href="./images/sprite.svg#heart"></use>
+                                        </svg>
+                                        Like
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="products__button">
+                    <a href="" class="products__more button button__white">Show More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="rooms pd_44">
+            <div class="rooms__container container">
+                <div class="rooms__body">
+                    <h2 class="rooms__title title">50+ Beautiful rooms inspiration</h2>
+                    <p class="rooms__text text">Our designer already made a lot of beautiful prototipe of rooms that
+                        inspire you</p>
+                    <a href="" class="rooms__button button">Explore More</a>
+                </div>
+                <div class="rooms__slider slider-rooms">
+                    <!-- Slider main container -->
+                    <div class="slider-rooms__body swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="slider-rooms__slide swiper-slide">
+                                <img class="slider-rooms__image" src="./images/rooms/01.jpg" alt="Slide rooms 1">
+                                <a href="" class="slider-rooms__content">
+                                    <div class="slider-rooms__label label-slider">
+                                        <div class="slider-rooms__number text">01</div>
+                                        <div class="slider-rooms__line"></div>
+                                        <div class="slider-rooms__text text">Bed Room</div>
+                                    </div>
+                                    <h2 class="slider-rooms__title title__small">Inner Peace</h2>
+                                    <div class="slider-rooms__svg">
+                                        <svg class="slider-rooms__svg_arrow">
+                                            <use href="./images/sprite.svg#arrowright"></use>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slider-rooms__slide swiper-slide">
+                                <img class="slider-rooms__image" src="./images/rooms/02.jpg" alt="Slide rooms 2">
+                                <a href="" class="slider-rooms__content">
+                                    <div class="slider-rooms__label label-slider">
+                                        <div class="slider-rooms__number text">02</div>
+                                        <div class="slider-rooms__line"></div>
+                                        <div class="slider-rooms__text text">Bed Room</div>
+                                    </div>
+                                    <h2 class="slider-rooms__title title__small">Inner Peace</h2>
+                                    <div class="slider-rooms__svg">
+                                        <svg class="slider-rooms__svg_arrow">
+                                            <use href="./images/sprite.svg#arrowright"></use>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slider-rooms__slide swiper-slide">
+                                <img class="slider-rooms__image" src="./images/rooms/03.jpg" alt="Slide rooms 3">
+                                <a href="" class="slider-rooms__content">
+                                    <div class="slider-rooms__label label-slider">
+                                        <div class="slider-rooms__number text">03</div>
+                                        <div class="slider-rooms__line"></div>
+                                        <div class="slider-rooms__text text">Bed Room</div>
+                                    </div>
+                                    <h2 class="slider-rooms__title title__small">Inner Peace</h2>
+                                    <div class="slider-rooms__svg">
+                                        <svg class="slider-rooms__svg_arrow">
+                                            <use href="./images/sprite.svg#arrowright"></use>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="slider-rooms__arrows slider-arrows">
+                        <button type="button" class="slider-rooms__arrow slider-arrow slider-arrow__prew">
+                            <svg class="arrow__prew slider-arrow__white">
+                                <use href="./images/sprite.svg#arrow"></use>
+                            </svg>
+                        </button>
+                        <button type="button" class="slider-rooms__arrow slider-arrow slider-arrow__next">
+                            <svg class="arrow__next slider-arrow__white">
+                                <use href="./images/sprite.svg#arrow"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="slider-rooms__dotts"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tips pd_44">
+            <div class="tips__container container">
+                <h2 class="tips__title title">Tips & Tricks</h2>
+                <div class="tips__slider slider-tips">
+                    <!-- Slider main container -->
+                    <div class="slider-tips__body swiper">
+                        <!-- Additional required wrapper -->
+                        <div class=" slider-tips__wrapper swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="slider-tips__slide swiper-slide">
+                                <a href="" class="slider-tips__image">
+                                    <img src="./images/tips/01.jpg" alt="Slide 1">
+                                </a>
+                                <div class="slider-tips__content">
+                                    <a href="" class="slider-tips__title title__small">How to create a living room to
+                                        love</a>
+                                    <p class="slider-tips__text text">20 jan 2020</p>
+                                </div>
+                            </div>
+                            <div class="slider-tips__slide swiper-slide">
+                                <a href="" class="slider-tips__image">
+                                    <img src="./images/tips/02.jpg" alt="Slide 2">
+                                </a>
+                                <div class="slider-tips__content">
+                                    <a href="" class="slider-tips__title title__small">Solution for clean look working
+                                        space</a>
+                                    <p class="slider-tips__text text">10 jan 2020</p>
+                                </div>
+                            </div>
+                            <div class="slider-tips__slide swiper-slide">
+                                <a href="" class="slider-tips__image">
+                                    <img src="./images/tips/03.jpg" alt="Slide 3">
+                                </a>
+                                <div class="slider-tips__content">
+                                    <a href="" class="slider-tips__title title__small">Make your cooking activity
+                                        more fun with good setup</a>
+                                    <p class="slider-tips__text text">20 jan 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-tips__dotts"></div>
+                    <div class="slider-tips__arrows slider-arrows">
+                        <button type="button" class="slider-tips__arrow  slider-tips__arrow_prew">
+                            <svg class="arrow__prew slider-arrow__white">
+                                <use href="./images/sprite.svg#arrow"></use>
+                            </svg>
+                        </button>
+                        <button type="button" class="slider-tips__arrow  slider-tips__arrow_next">
+                            <svg class="arrow__next slider-arrow__white">
+                                <use href="./images/sprite.svg#arrow"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="furniture">
+            <div class="furniture__container">
+                <div class="furniture__label">Share your setup with</div>
+                <h2 class="furniture__title title title">#FuniroFurniture</h2>
+                <div data-speed="0.01" class="furniture__body">
+                    <div class="furniture__items">
+                        <div class="furniture__column">
+                            <div class="furniture__row row-furniture row-furniture_left-top">
+                                <div class="row-furniture__item"><img src="./images/furniture/09.jpg"
+                                        alt="Image"></div>
+                                <div class="row-furniture__item"><img src="./images/furniture/01.jpg"
+                                        alt="Image"></div>
+                                <div class="row-furniture__item"><img src="./images/furniture/02.jpg"
+                                        alt="Image"></div>
+                            </div>
+                            <div class="furniture__row row-furniture row-furniture_left-bottom">
+                                <div class="row-furniture__item"><img src="./images/furniture/04.jpg"
+                                        alt="Image"></div>
+                                <div class="row-furniture__item"><img src="./images/furniture/06.jpg"
+                                        alt="Image"></div>
+                                <div class="row-furniture__item"><img src="./images/furniture/07.jpg"
+                                        alt="Image"></div>
+                            </div>
+                        </div>
+                        <div class="furniture__column">
+                            <div class="furniture__row row-furniture row-furniture_center">
+                                <div class="row-furniture__item"><img src="./images/furniture/03.jpg"
+                                        alt="Image"></div>
+                            </div>
+                        </div>
+                        <div class="furniture__column">
+                            <div class="furniture__row row-furniture row-furniture_right-top">
+                                <div class="row-furniture__item"><img src="./images/furniture/04.jpg"
+                                        alt="Image"></div>
+                                <div class="row-furniture__item"><img src="./images/furniture/05.jpg"
+                                        alt="Image"></div>
+                                <div class="row-furniture__item"><img src="./images/furniture/01.jpg"
+                                        alt="Image"></div>
+                            </div>
+                            <div class="furniture__row row-furniture row-furniture_right-bottom">
+                                <div class="row-furniture__item"><img src="./images/furniture/08.jpg"
+                                        alt="Image"></div>
+                                <div class="row-furniture__item"><img src="./images/furniture/09.jpg"
+                                        alt="Image"></div>
+                                <div class="row-furniture__item"><img src="./images/furniture/06.jpg"
+                                        alt="Image"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__main">
+                <a href="#" class="footer__logo mb_16"><img src="./images/Logo.svg" alt="Logo footer"></a>
+                <p class="footer__text text mb_16">Worldwide furniture store since 2020. We sell over 1000+ branded
+                    products on our website</p>
+                <ul class="footer__contacts contacts-footer">
+                    <li class="contacts-footer__item mb_16">
+                        <a href="#" class="contacts-footer__link text">
+                            <svg class="contacts-footer__svg">
+                                <use href="./images/sprite.svg#location"></use>
+                            </svg>
+                            Sawojajar Malang, Indonesia</a>
+                    </li>
+                    <li class="contacts-footer__item mb_16">
+                        <a href="tel:+62894563455" class="contacts-footer__link text">
+                            <svg class="contacts-footer__svg">
+                                <use href="./images/sprite.svg#phone"></use>
+                            </svg>
+                            +6289 456 3455</a>
+                    </li>
+                    <li class="contacts-footer__item">
+                        <a href="https://www.funiro.com" target="_blank"
+                            class="contacts-footer__link text">www.funiro.com</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__menu menu-footer">
+                <div data-spollers="768, max" class="menu-footer__column">
+                    <button class="column-footer__btn footer__title mb_16" data-spoller type="button">Menu
+                        <svg class="footer__arrow arrow">
+                            <use href="./images/sprite.svg#arrow"></use>
+                        </svg>
+                    </button>
+                    <nav>
+                        <ul class="column-footer__item">
+                            <li class="column-footer__list mb_16"><a href="#"
+                                    class="column-footer__link text">Products</a></li>
+                            <li class="column-footer__list mb_16"><a href="#" class="column-footer__link text">Rooms</a>
+                            </li>
+                            <li class="column-footer__list mb_16"><a href="#"
+                                    class="column-footer__link text">Inspirations</a></li>
+                            <li class="column-footer__list mb_16"><a href="#" class="column-footer__link text">About
+                                    Us</a></li>
+                            <li class="column-footer__list"><a href="#" class="column-footer__link text">Terms &
+                                    Policy</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div data-spollers="768, max" class="menu-footer__column column-footer">
+                    <button class="column-footer__btn footer__title mb_16" type="button" data-spoller>Account
+                        <svg class="footer__arrow arrow">
+                            <use href="./images/sprite.svg#arrow"></use>
+                        </svg>
+                    </button>
+                    <nav>
+                        <ul class="column-footer__item">
+                            <li class="column-footer__list mb_16"><a href="#" class="column-footer__link text">My
+                                    Account</a></li>
+                            <li class="column-footer__list mb_16"><a href="#"
+                                    class="column-footer__link text">Checkout</a></li>
+                            <li class="column-footer__list mb_16"><a href="#" class="column-footer__link text">My
+                                    Cart</a></li>
+                            <li class="column-footer__list"><a href="#" class="column-footer__link text">My catalog</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div data-spollers="768, max" class="menu-footer__column">
+                    <button class="column-footer__btn footer__title mb_16" type="button" data-spoller>Stay Connected
+                        <svg class="footer__arrow arrow">
+                            <use href="./images/sprite.svg#arrow"></use>
+                        </svg>
+                    </button>
+                    <ul class="column-footer__item">
+                        <li class="column-footer__list mb_16"><a href="#" class="column-footer__link text">Facebook</a>
+                        </li>
+                        <li class="column-footer__list mb_16"><a href="#" class="column-footer__link text">Instagram</a>
+                        </li>
+                        <li class="column-footer__list"><a href="#" class="column-footer__link text">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__subscribe subscribe">
+                <h3 class="subscribe__title footer__title mb_16">Stay Updated</h3>
+                <form id="footer-form" action="https://formspree.io/f/mrgvzepn" method="POST">
+                    <div class="subscribe__form">
+                        <input class="subscribe__input _req _email" autocomplete="off" type="text" name="form[]"
+                            placeholder="Enter your email">
+                        <button type="submit" class="subscribe__button">
+                            <svg class="subscribe__svg">
+                                <use href="./images/sprite.svg#send"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <p id="subscribe-status" class="subscribe__status text"></p>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/form.js"></script>
+    <script src="./js/spollers.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+</body>
+
+</html>

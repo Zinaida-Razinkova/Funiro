@@ -1,0 +1,55 @@
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    font-size: 20px;
+    line-height: inherit;
+    color: #FFFFFF;
+
+    background-color: $accent-color;
+    border: 1px solid $accent-color;
+    text-align: center;
+
+    padding: 25px;
+    width: 100%;
+    min-height: 78px;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background-color: #fff;
+        border: 1px solid $accent-color;
+        color: $accent-color;
+    }
+
+    @media screen and (max-width: 768.98px) {
+        font-size: 16px;
+        min-height: 50px;
+        padding: 15px;
+    }
+}
+
+.button__white {
+    font-size: 16px;
+    color: $accent-color;
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-width: 202px;
+    min-height: 48px;
+    padding: 15px;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        border: 1px solid $accent-color;
+        color: #fff;
+    }
+
+    @media screen and (max-width: 768.98px) {
+        padding: 15px;
+    }
+}

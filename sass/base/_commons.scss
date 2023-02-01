@@ -1,0 +1,135 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: $primary-font;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #fff;
+    color: $primary-color;
+    margin: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1270px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+
+.mb_16 {
+    margin-bottom: 16px;
+
+    @media screen and (max-width: 767.98px) {
+        margin-bottom: 10px;
+    }
+}
+
+
+
+.pd_100 {
+    padding: 100px 0;
+
+    @media screen and (max-width: 991.98px) {
+        padding: 50px 0;
+    }
+
+    @media screen and (max-width: 767.98px) {
+        padding: 30px 0;
+    }
+}
+
+.pd_44 {
+    padding: 44px 0;
+
+    @media screen and (max-width: 767.98px) {
+        padding: 30px 0;
+    }
+}
+
+.title {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+    color: $primary-color;
+
+    @media screen and (max-width: 991.98px) {
+        font-size: 30px;
+    }
+}
+
+.title__big {
+    font-size: 56px;
+
+    @media screen and (max-width: 1439.98px) {
+        font-size: 30px;
+    }
+}
+
+.title__small {
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    font-size: 24px;
+    line-height: 1.2;
+    color: $primary-color;
+
+    @media screen and (max-width: 1100px) {
+        font-size: 18px;
+    }
+}
+
+.footer__title {
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    background: transparent;
+    color: #000000;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 18px;
+    }
+}
+
+.text {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #616161;
+}
+
+._flyImage {
+    opacity: 1;
+    position: fixed;
+    z-index: 100;
+    transition: all 1s ease 0s;
+}
